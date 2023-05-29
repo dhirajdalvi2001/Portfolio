@@ -124,4 +124,41 @@ export const Data = {
       marks: "7.6 CGPA",
     },
   ],
+  certifications: [
+    {
+      _id: 1,
+      name: "Udemy : Complete 2023 Web Development Bootcamp",
+      provider: "Angela Yu",
+      type: "Udemy Certificate",
+    },
+    {
+      _id: 2,
+      name: "CSS (Basics)",
+      provider: "HackerRank",
+      type: "HackerRank Certificate",
+    },
+    {
+      _id: 3,
+      name: "Java (Basics)",
+      provider: "HackerRank",
+      type: "HackerRank Certificate",
+    },
+  ],
+  achievements: [
+    {
+      _id: 1,
+      name: "HackerRank Java",
+      stars: 5,
+    },
+    {
+      _id: 2,
+      name: "HackerRank SQL",
+      stars: 4,
+    },
+    {
+      _id: 3,
+      name: "HackerRank 10 Days of Javascript",
+      stars: 4,
+    },
+  ],
 };
