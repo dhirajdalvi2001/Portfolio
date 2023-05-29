@@ -170,7 +170,7 @@
       left: 100%;
     }
     100% {
-      left: 40%;
+      left: 60%;
     }
   }
   @keyframes hide {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.styles.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -30,19 +30,19 @@ function Navbar() {
         <GiHamburgerMenu className="burger" onClick={toggleNav} />
       </div>
       <div className={navTapped ? "nav-items show" : "nav-items hide"}>
-        <a href="#" className="nav-item">
+        <a href="#" className="nav-item" onClick={toggleNav}>
           Home
         </a>
-        <a href="#experience" className="nav-item">
+        <a href="#experience" className="nav-item" onClick={toggleNav}>
           Experience
         </a>
-        <a href="#projects" className="nav-item">
+        <a href="#projects" className="nav-item" onClick={toggleNav}>
           Projects
         </a>
-        <a href="#education" className="nav-item">
+        <a href="#education" className="nav-item" onClick={toggleNav}>
           Education
         </a>
-        <a href="#contact" className="nav-item">
+        <a href="#contact" className="nav-item" onClick={toggleNav}>
           Contact
         </a>
       </div>
