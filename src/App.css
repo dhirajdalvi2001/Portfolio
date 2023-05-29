@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@
   z-index: 1;
 }
 :root {
+  --opposite-color: #000;
   --body-background: #eeeeee;
   --body-color: #050031;
   --font-color: #616161;
@@ -26,6 +29,7 @@
 }
 
 [theme="dark"] {
+  --opposite-color: #fff;
   --body-background: #030022;
   --body-color: #d5d5d5;
   --font-color: #d7d7d7;
@@ -40,4 +44,8 @@
   height: max-content;
   min-width: 100vw;
   max-width: max-content;
+}
+@media screen and (max-width: 550px) {
+}
+@media screen and (min-width: 550px) and (max-width: 1000px) {
 }

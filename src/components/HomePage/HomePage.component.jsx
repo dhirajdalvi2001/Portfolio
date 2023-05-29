@@ -8,6 +8,7 @@ import tailwind from "./tailwind.png";
 import sass from "./sass.png";
 import express from "./express.png";
 import node from "./node.png";
+import java from "./java.png";
 import "./HomePage.styles.css";
 
 function HomePage() {
@@ -105,6 +106,15 @@ function HomePage() {
               src={node}
               title="Node.Js"
               alt="Node.Js"
+              srcSet=""
+              className="icon"
+            />
+          </div>
+          <div className="circle">
+            <img
+              src={java}
+              title="Java"
+              alt="Java"
               srcSet=""
               className="icon"
             />

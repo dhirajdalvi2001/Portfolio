@@ -1,24 +1,37 @@
 import React from "react";
+import logo1 from "./Istellar.png";
+import { Data } from "../../data/Data";
 import "./Experience.styles.css";
 
 function Experience() {
-  const experienceDetails = [
-    {
-      companyName: "Istellar Labs Pvt. Ltd.",
-      designation: "Software Engineer",
-      start: "2nd Nov, 22",
-      end: "16 Feb, 23",
-    },
-  ];
   return (
     <div id="experience">
       <div className="container">
-        {experienceDetails.map((e) => {
+        {Data.experience.map((e) => {
           return (
-            <div className="tab">
-              <h1 className="heading1">{e.companyName}</h1>
-              <h2 className="heading1">{e.designation}</h2>
-              <h4 className="heading1">{e.start} <span> - </span>{e.end}</h4>
+            <div className="tab" key={e}>
+              <div className="text-part">
+                <div className="logos">
+                  <img src={logo1} alt="" srcSet="" className="logo" />
+                </div>
+                <h1 className="heading1">
+                  <a href={e.link}>{e.name}</a>
+                </h1>
+                <h2 className="heading2">{e.designation}</h2>
+                <h4 className="heading4">
+                  {e.start} <span> - </span>
+                  {e.end}
+                </h4>
+                <div className="para">
+                  {e.description.map((e) => {
+                    return <p key={e.li}>{e.li}</p>;
+                  })}
+                </div>
+              </div>
+              <div className="images-part">
+                <div className="website img1" />
+                <div className="website img2" />
+              </div>
             </div>
           );
         })}

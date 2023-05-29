@@ -42,7 +42,7 @@
   transition: all 0.3s;
 }
 .nav-item:hover {
-  color: #fff;
+  color: var(--opposite-color);
 }
 .menu {
   display: none;

@@ -1,6 +1,7 @@
 #experience {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: max-content;
   background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
@@ -8,7 +9,7 @@
 }
 #experience .container {
   width: 80vw;
-  height: 80vh;
+  height: max-content;
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -16,11 +17,158 @@
 }
 .tab {
   margin: auto;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  max-height: max-content;
   border-left: 3px solid var(--nav-color);
+  display: flex;
+}
+.tab .text-part {
+  min-width: 450px;
+  width: 50%;
+}
+.tab .images-part {
+  min-width: 400px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.tab .text-part .logos {
+  margin-left: 20px;
+  width: 150px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab .text-part .logo {
+  width: auto;
+  height: 100px;
+  border-radius: 12px;
 }
 .tab .heading1 {
-  margin-left: 10px;
+  margin-left: 20px;
   color: var(--body-color);
+}
+.tab .heading1 a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.tab .heading1 a:hover {
+  color: var(--opposite-color);
+}
+.tab .heading2 {
+  margin-top: 0;
+  margin-left: 20px;
+}
+.tab .heading4 {
+  margin-top: 8px;
+  margin-left: 20px;
+}
+.tab .para {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: var(--body-color);
+  text-align: justify;
+}
+.tab .para p {
+  margin-top: 8px;
+}
+.images-part .website {
+  width: 70%;
+  height: 46%;
+  background-size: cover;
+  background-position: top;
+  box-shadow: 0 0 5px 1px var(--body-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.images-part .website:hover {
+  background-position: bottom;
+}
+
+.images-part .img1 {
+  margin-left: 10px;
+  margin-right: auto;
+  background-image: url("website1.png");
+  transition: ease-in-out 15s;
+}
+.images-part .img2 {
+  margin-left: auto;
+  margin-right: 10px;
+  background-image: url("website2.png");
+  transition: ease-in-out 8s;
+}
+@media screen and (max-width: 550px) {
+  #experience .tab {
+    flex-direction: column;
+  }
+  #experience .container {
+    margin: 30px auto;
+  }
+  .tab .text-part {
+    margin: auto;
+    min-width: 300px;
+    width: 90%;
+  }
+  .tab .images-part {
+    margin: auto;
+    min-width: 300px;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+  .tab .website {
+    width: 100%;
+  }
+  .logos {
+    margin: auto !important;
+  }
+  .tab .img1,
+  .img2 {
+    margin: auto !important;
+  }
+  .heading1 {
+    margin-left: 0 !important;
+    font-size: var(--h3);
+  }
+  .heading2 {
+    margin-left: 0 !important;
+    font-size: var(--h4);
+  }
+  .heading4 {
+    margin-left: 0 !important;
+    font-size: var(--h5);
+  }
+  .para {
+    margin-left: 0 !important;
+    font-size: var(--h5);
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 1000px) {
+  #experience .tab {
+    flex-direction: column;
+  }
+  #experience .container {
+    margin: 30px auto;
+  }
+  .tab .text-part {
+    margin: auto;
+    min-width: 450px;
+    width: 90%;
+  }
+  .tab .images-part {
+    margin: auto;
+    min-width: 400px;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
 }
