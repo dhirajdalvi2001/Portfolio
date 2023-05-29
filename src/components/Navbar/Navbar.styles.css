@@ -97,11 +97,6 @@
     border-radius: 0 0 0 12px;
     animation-name: show;
     animation-duration: 1s;
-    /* position: absolute;
-    top: 60px;
-    left: 100%;
-    animation-name: hide;
-    animation-duration: 1s; */
   }
 
   @keyframes show {
@@ -125,6 +120,10 @@
   .nav-items {
     display: none;
   }
+  .nav-item {
+    padding: 10px 16px;
+    font-size: var(--h5) !important;
+  }
   .menu {
     margin: 0 0 0 auto;
     width: 60px;
@@ -139,13 +138,29 @@
     margin: 0 !important;
     display: flex !important;
     flex-direction: column;
-    width: 60% !important;
+    width: 40% !important;
     min-height: max-content !important;
-    height: 40vh !important;
+    height: max-content;
     position: absolute;
     top: 60px;
     right: 0;
     background-color: var(--nav-color);
+    border-radius: 0 0 0 12px;
+    animation-name: show;
+    animation-duration: 1s;
+  }
+  .hide {
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column;
+    width: 40% !important;
+    min-height: max-content !important;
+    height: max-content;
+    position: absolute;
+    top: 60px;
+    right: -40%;
+    background-color: var(--nav-color);
+    border-radius: 0 0 0 12px;
     animation-name: show;
     animation-duration: 1s;
   }
@@ -156,6 +171,14 @@
     }
     100% {
       left: 40%;
+    }
+  }
+  @keyframes hide {
+    0% {
+      left: 10%;
+    }
+    100% {
+      left: 100%;
     }
   }
 }
