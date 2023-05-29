@@ -1,0 +1,26 @@
+#experience {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experience .container {
+  width: 80vw;
+  height: 80vh;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  border-left: 3px solid var(--nav-color);
+}
+.tab .heading1 {
+  margin-left: 10px;
+  color: var(--body-color);
+}

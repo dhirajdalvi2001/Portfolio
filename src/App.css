@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.7s ease-in-out;
+  color: var(--body-color);
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+  z-index: 1;
+}
+:root {
+  --body-background: #eeeeee;
+  --body-color: #050031;
+  --font-color: #616161;
+  --primary-color: #77c2ff;
+  --secondary-color: #b0dcff;
+  --nav-color: #f0ffff;
+  --toggle-bg: url("./components/ToggleButton/clouds.png");
+  --profile-pic: url("./components/HomePage/ProfilePic.png");
+  --h1: 44px;
+  --h2: 30px;
+  --h3: 24px;
+  --h4: 18px;
+  --h5: 14px;
+}
+
+[theme="dark"] {
+  --body-background: #030022;
+  --body-color: #d5d5d5;
+  --font-color: #d7d7d7;
+  --primary-color: #7300ff;
+  --secondary-color: #4d007c;
+  --nav-color: #030017;
+  --toggle-bg: url("./components/ToggleButton/stars.png");
+}
+.App {
+  background-color: var(--body-background);
+  min-height: 100vh;
+  height: max-content;
+  min-width: 100vw;
+  max-width: max-content;
+}

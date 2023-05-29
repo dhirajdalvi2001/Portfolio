@@ -1,0 +1,146 @@
+#navbar {
+  height: 60px;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+#navbar2 {
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  background-color: var(--nav-color);
+  top: 0;
+  z-index: 5;
+}
+.nav-logo {
+  width: 86px;
+  height: 60px;
+}
+.nav-items {
+  margin-left: auto;
+  margin-right: 100px;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+.nav-items a {
+  text-decoration: none;
+}
+.nav-item {
+  padding: 16px 24px;
+  font-size: var(--h4);
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.nav-item:hover {
+  color: #fff;
+}
+.menu {
+  display: none;
+}
+.burger {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  .nav-items {
+    display: none;
+  }
+  .menu {
+    margin: 0 0 0 auto;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+  }
+  .nav-item {
+    padding: 16px 100%;
+  }
+  .show {
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column;
+    width: 90% !important;
+    min-height: max-content !important;
+    height: 60vh !important;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--nav-color);
+    animation-name: show;
+    animation-duration: 1s;
+  }
+  .hide {
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    animation-name: hide;
+    animation-duration: 1s;
+  }
+
+  @keyframes show {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: 10%;
+    }
+  }
+  @keyframes hide {
+    0% {
+      left: 10%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 1000px) {
+  .nav-items {
+    display: none;
+  }
+  .menu {
+    margin: 0 0 0 auto;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+  }
+  .nav-item {
+    padding: 16px 100%;
+  }
+  .show {
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column;
+    width: 60% !important;
+    min-height: max-content !important;
+    height: 60vh !important;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--nav-color);
+    animation-name: show;
+    animation-duration: 1s;
+  }
+
+  @keyframes show {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: 40%;
+    }
+  }
+}
