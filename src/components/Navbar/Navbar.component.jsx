@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Navbar.styles.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -16,7 +16,6 @@ function Navbar() {
   };
   const toggleNav = () => {
     setNavTapped(!navTapped);
-    console.log(navTapped);
     if (colorChange) {
       setColorchange(colorChange);
     } else {
@@ -27,7 +26,11 @@ function Navbar() {
   return (
     <div id={colorChange ? "navbar2" : "navbar"}>
       <div className="menu">
-        <GiHamburgerMenu className="burger" onClick={toggleNav} />
+        <GiHamburgerMenu
+          className="burger"
+          onClick={toggleNav}
+          onMouseLeave={navTapped ? toggleNav : () => {}}
+        />
       </div>
       <div className={navTapped ? "nav-items show" : "nav-items hide"}>
         <a href="#" className="nav-item" onClick={toggleNav}>

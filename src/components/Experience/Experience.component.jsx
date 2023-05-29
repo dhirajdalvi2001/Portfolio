@@ -6,6 +6,9 @@ import "./Experience.styles.css";
 function Experience() {
   return (
     <div id="experience">
+      <div className="title">
+        <h2 className="heading2">Experience</h2>
+      </div>
       <div className="container">
         {Data.experience.map((e) => {
           return (

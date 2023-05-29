@@ -1,11 +1,16 @@
 #experience {
+  scroll-margin-top: 60px;
   width: 100vw;
   min-height: 100vh;
   max-height: max-content;
   background-color: var(--secondary-color);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#experience .title {
+  width: 80%;
 }
 #experience .container {
   width: 80vw;

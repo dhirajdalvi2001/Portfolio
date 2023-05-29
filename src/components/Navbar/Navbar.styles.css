@@ -29,6 +29,7 @@
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
+  transition: 0.3s ease-in-out;
 }
 .nav-items a {
   text-decoration: none;
@@ -53,6 +54,22 @@
   height: 30px;
 }
 
+/* @keyframes show {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 60%;
+  }
+}
+@keyframes hide {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 100%;
+  }
+} */
 @media screen and (max-width: 550px) {
   .nav-items {
     display: none;
@@ -69,6 +86,36 @@
     cursor: pointer;
   }
   .show {
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column;
+    width: 40% !important;
+    min-height: max-content !important;
+    height: max-content;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--nav-color);
+    border-radius: 0 0 0 12px;
+    transition: 0.3s ease-in-out;
+    transform: translateX(0%);
+  }
+  .hide {
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column;
+    width: 40% !important;
+    min-height: max-content !important;
+    height: max-content;
+    position: absolute;
+    top: 60px;
+    right: -40%;
+    background-color: var(--nav-color);
+    border-radius: 0 0 0 12px;
+    transition: 0.3s ease-in-out;
+    transform: translateX(0%);
+  }
+  /* .show {
     margin: 0 !important;
     display: flex !important;
     flex-direction: column;
@@ -97,24 +144,7 @@
     border-radius: 0 0 0 12px;
     animation-name: show;
     animation-duration: 1s;
-  }
-
-  @keyframes show {
-    0% {
-      left: 100%;
-    }
-    100% {
-      left: 60%;
-    }
-  }
-  @keyframes hide {
-    0% {
-      left: 10%;
-    }
-    100% {
-      left: 100%;
-    }
-  }
+  } */
 }
 @media screen and (min-width: 550px) and (max-width: 1000px) {
   .nav-items {
@@ -163,22 +193,5 @@
     border-radius: 0 0 0 12px;
     animation-name: show;
     animation-duration: 1s;
-  }
-
-  @keyframes show {
-    0% {
-      left: 100%;
-    }
-    100% {
-      left: 60%;
-    }
-  }
-  @keyframes hide {
-    0% {
-      left: 10%;
-    }
-    100% {
-      left: 100%;
-    }
   }
 }
