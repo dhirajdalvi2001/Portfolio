@@ -33,9 +33,10 @@ export const Data = {
       _id: 0,
       name: "Chess API",
       github: "https://github.com/dhirajdalvi2001/Chess-Api",
-      hosted: "https://github.com/dhirajdalvi2001/Chess-Api",
-      start: "January, 2023",
-      end: "February, 2023",
+      hosted: "https://chessapihosted.web.app/",
+      start: "Jan, 2023",
+      end: "Feb, 2023",
+      img: "ChessApi",
       description: [
         {
           li: "Website where users can search for users present on chess.com platform",
@@ -65,8 +66,9 @@ export const Data = {
       name: "Keeper",
       github: "https://github.com/dhirajdalvi2001/Keeper",
       hosted: "https://keeperdd.netlify.app/",
-      start: "January, 2022",
-      end: "March, 2022",
+      start: "Jan, 2022",
+      end: "Mar, 2022",
+      img: "Keeper",
       description: [
         { li: "Web-page where users can manage notes." },
         { li: "Add and delete notes on the webpage platform." },
@@ -82,8 +84,9 @@ export const Data = {
       name: "Simon Game",
       github: "https://github.com/dhirajdalvi2001/Simon-Game",
       hosted: "https://dhirajdalvi2001.github.io/Simon-Game/",
-      start: "November, 2021",
-      end: "December, 2021",
+      start: "Nov, 2021",
+      end: "Dec, 2021",
+      img: "SimonGame",
       description: [
         {
           li: "Web-page game where the user has to memorize the colors and tap/ click in the same series.",

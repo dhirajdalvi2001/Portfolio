@@ -18,6 +18,7 @@
   --font-color: #616161;
   --primary-color: #77c2ff;
   --secondary-color: #b0dcff;
+  --tertiary-color: #c1e3ff;
   --nav-color: #f0ffff;
   --toggle-bg: url("./components/ToggleButton/Images/clouds.png");
   --profile-pic: url("./components/HomePage/Images/ProfilePic.png");
@@ -26,6 +27,7 @@
   --h3: 24px;
   --h4: 16px;
   --h5: 14px;
+  --h6: 10px;
 }
 
 [theme="dark"] {
@@ -35,6 +37,7 @@
   --font-color: #d7d7d7;
   --primary-color: #7300ff;
   --secondary-color: #4d007c;
+  --tertiary-color: #050137;
   --nav-color: #030017;
   --toggle-bg: url("./components/ToggleButton/Images/stars.png");
 }
