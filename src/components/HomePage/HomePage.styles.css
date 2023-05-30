@@ -45,9 +45,9 @@
 }
 .profile-pic {
   margin: auto 0;
-  min-height: 350px;
+  min-height: 300px;
   height: 16vw;
-  min-width: 350px;
+  min-width: 300px;
   width: 16vw;
   background-color: var(--primary-color);
   background-image: var(--profile-pic);
@@ -88,8 +88,8 @@
   order: 0;
 }
 .emoji {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   cursor: pointer;
 }
