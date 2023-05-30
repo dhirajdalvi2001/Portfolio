@@ -20,6 +20,7 @@
   --secondary-color: #b0dcff;
   --tertiary-color: #c1e3ff;
   --nav-color: #f0ffff;
+  --link-color: #003cff;
   --toggle-bg: url("./components/ToggleButton/Images/clouds.png");
   --profile-pic: url("./components/HomePage/Images/ProfilePic.png");
   --h1: 40px;
@@ -39,6 +40,7 @@
   --secondary-color: #4d007c;
   --tertiary-color: #050137;
   --nav-color: #030017;
+  --link-color: #00c8ff;
   --toggle-bg: url("./components/ToggleButton/Images/stars.png");
 }
 .App {

@@ -8,7 +8,7 @@ function Projects() {
       <div className="container">
         {Data.projects.map((e) => {
           return (
-            <div className="tab">
+            <div className="tab" key={e._id}>
               <div className="image">
                 <div className={e.img} />
               </div>
@@ -42,7 +42,7 @@ function Projects() {
                   </div>
                   <ul className="list-box">
                     {e.description.map((f) => {
-                      return <li className="list-item">{f.li}</li>;
+                      return <li className="list-item" key={f.li}>{f.li}</li>;
                     })}
                   </ul>
                 </div>
