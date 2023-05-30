@@ -43,7 +43,7 @@
   transition: all 0.3s;
 }
 .nav-item:hover {
-  color: var(--opposite-color);
+  color: var(--link-color);
 }
 .menu {
   display: none;

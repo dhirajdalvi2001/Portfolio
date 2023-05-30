@@ -25,12 +25,15 @@
   align-items: center;
 }
 #projects .tab {
+  margin-bottom: 20px;
   width: 100%;
   min-height: 400px;
   max-height: max-content;
   display: flex;
   justify-content: center;
-  border: 0;
+  border: 1px solid;
+  border-radius: 12px;
+  box-shadow: 0 0 15px 5px var(--secondary-color) inset;
   /* background-color: #292929; */
 }
 #projects .image {

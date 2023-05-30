@@ -64,6 +64,9 @@
   font-family: "playfair", sans-serif;
   text-transform: capitalize;
 }
+.header span:hover {
+  color: var(--link-color);
+}
 .header:before {
   background-color: var(--header-color);
   content: "";
