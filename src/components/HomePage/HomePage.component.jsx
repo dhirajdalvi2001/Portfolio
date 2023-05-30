@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
-import emoji from "./emoji.png";
-import html from "./html.png";
-import css from "./css.png";
-import js from "./js.png";
-import react from "./react.png";
-import tailwind from "./tailwind.png";
-import sass from "./sass.png";
-import express from "./express.png";
-import node from "./node.png";
-import java from "./java.png";
+import emoji from "./Images/emoji.png";
+import html from "./Images/html.png";
+import css from "./Images/css.png";
+import js from "./Images/js.png";
+import react from "./Images/react.png";
+import tailwind from "./Images/tailwind.png";
+import sass from "./Images/sass.png";
+import express from "./Images/express.png";
+import node from "./Images/node.png";
+import java from "./Images/java.png";
 import "./HomePage.styles.css";
 
 function HomePage() {

@@ -103,13 +103,13 @@
 .images-part .img1 {
   margin-left: 10px;
   margin-right: auto;
-  background-image: url("website1.png");
+  background-image: url("./Images/website1.png");
   transition: ease-in-out 15s;
 }
 .images-part .img2 {
   margin-left: auto;
   margin-right: 10px;
-  background-image: url("website2.png");
+  background-image: url("./Images/website2.png");
   transition: ease-in-out 8s;
 }
 @media screen and (max-width: 550px) {

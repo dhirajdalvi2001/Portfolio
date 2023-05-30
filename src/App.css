@@ -19,8 +19,8 @@
   --primary-color: #77c2ff;
   --secondary-color: #b0dcff;
   --nav-color: #f0ffff;
-  --toggle-bg: url("./components/ToggleButton/clouds.png");
-  --profile-pic: url("./components/HomePage/ProfilePic.png");
+  --toggle-bg: url("./components/ToggleButton/Images/clouds.png");
+  --profile-pic: url("./components/HomePage/Images/ProfilePic.png");
   --h1: 40px;
   --h2: 28px;
   --h3: 24px;
@@ -36,7 +36,7 @@
   --primary-color: #7300ff;
   --secondary-color: #4d007c;
   --nav-color: #030017;
-  --toggle-bg: url("./components/ToggleButton/stars.png");
+  --toggle-bg: url("./components/ToggleButton/Images/stars.png");
 }
 .App {
   background-color: var(--body-background);

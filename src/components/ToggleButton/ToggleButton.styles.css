@@ -44,7 +44,7 @@
   left: 4px;
   bottom: 4px;
   /* background-color: yellow; */
-  background-image: url("./light.png");
+  background-image: url("./Images/light.png");
   background-size: cover;
   background-repeat: no-repeat;
   transition: 0.7s;
@@ -57,7 +57,7 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(24px);
   background-color: rgb(255, 255, 255, 0.1);
-  background-image: url("./dark.png");
+  background-image: url("./Images/dark.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
