@@ -18,15 +18,19 @@
 }
 .tech-stack {
   margin: auto;
-  width: 65vw;
+  width: 63vw;
   height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: space-around;
 }
-.stacks {
+#homepage .tech-stack .title {
+  display: flex;
+  justify-content: flex-end;
+}
+#homepage .tech-stack .stacks {
   display: flex;
   flex-wrap: wrap;
 }
@@ -125,6 +129,9 @@
     height: max-content;
     justify-content: center;
   }
+  #homepage .tech-stack .title {
+    justify-content: center;
+  }
   .stacks {
     justify-content: center;
   }
@@ -163,6 +170,9 @@
   .tech-stack {
     width: 100%;
     height: max-content;
+    justify-content: center;
+  }
+  #homepage .tech-stack .title {
     justify-content: center;
   }
   .stacks {
