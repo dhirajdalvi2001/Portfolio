@@ -1,7 +1,6 @@
 #experience {
   scroll-margin-top: 60px;
   width: 100vw;
-  min-height: 100vh;
   max-height: max-content;
   background-color: var(--secondary-color);
   display: flex;
@@ -20,6 +19,7 @@
   font-family: "playfair", sans-serif !important;
 }
 #experience .container {
+  margin: 40px;
   width: 80vw;
   height: max-content;
   border-radius: 12px;

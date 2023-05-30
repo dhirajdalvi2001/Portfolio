@@ -21,6 +21,7 @@
   --tertiary-color: #c1e3ff;
   --nav-color: #f0ffff;
   --link-color: #003cff;
+  --header-color: #050137;
   --toggle-bg: url("./components/ToggleButton/Images/clouds.png");
   --profile-pic: url("./components/HomePage/Images/ProfilePic.png");
   --h1: 40px;
@@ -41,6 +42,7 @@
   --tertiary-color: #050137;
   --nav-color: #030017;
   --link-color: #00c8ff;
+  --header-color: #dfdfdf;
   --toggle-bg: url("./components/ToggleButton/Images/stars.png");
 }
 .App {
@@ -50,7 +52,43 @@
   min-width: 100vw;
   max-width: max-content;
 }
+.header {
+  margin-top: 50px;
+  font-size: var(--h3);
+  overflow: hidden;
+}
+.header span {
+  padding: 10px 20px 18px;
+  display: block;
+  color: var(--header-color);
+  font-family: "playfair", sans-serif;
+  text-transform: capitalize;
+}
+.header:before {
+  background-color: var(--header-color);
+  content: "";
+  display: block;
+  height: 3px;
+  width: 50%;
+  transition: all 0.7s ease-in-out;
+  margin-bottom: 5px;
+}
+.header:after {
+  background-color: var(--header-color);
+  content: "";
+  display: block;
+  height: 3px;
+  width: 50%;
+  margin-left: 50%;
+  transition: all 0.7s ease-in-out;
+  margin-bottom: 0.25em;
+}
 @media screen and (max-width: 550px) {
+  .header {
+    margin-top: 50px;
+    font-size: var(--h3) !important;
+    overflow: hidden;
+  }
 }
 @media screen and (min-width: 550px) and (max-width: 1000px) {
 }

@@ -5,6 +5,11 @@ import "./Projects.styles.css";
 function Projects() {
   return (
     <div id="projects">
+      <div className="header">
+        <h2 className="">
+          <span>Projects</span>
+        </h2>
+      </div>
       <div className="container">
         {Data.projects.map((e) => {
           return (
@@ -42,7 +47,11 @@ function Projects() {
                   </div>
                   <ul className="list-box">
                     {e.description.map((f) => {
-                      return <li className="list-item" key={f.li}>{f.li}</li>;
+                      return (
+                        <li className="list-item" key={f.li}>
+                          {f.li}
+                        </li>
+                      );
                     })}
                   </ul>
                 </div>

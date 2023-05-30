@@ -6,8 +6,8 @@ import "./Experience.styles.css";
 function Experience() {
   return (
     <div id="experience">
-      <div className="title">
-        <h2 className="heading2">
+      <div className="header">
+        <h2 className="">
           <span>Experience</span>
         </h2>
       </div>
