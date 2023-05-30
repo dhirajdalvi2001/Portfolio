@@ -43,81 +43,91 @@ function HomePage() {
           <div className="profile-pic" />
         </div>
         <div className="tech-stack">
-          <h3>Tech Stack |</h3>
-          <div className="circle">
-            <img
-              src={html}
-              title="Html5"
-              alt="Html5"
-              srcSet=""
-              className="icon"
-            />
+          <div className="title">
+            <h3>Tech Stack |</h3>
           </div>
-          <div className="circle">
-            <img src={css} title="Css3" alt="Css3" srcSet="" className="icon" />
-          </div>
-          <div className="circle">
-            <img
-              src={js}
-              title="Javascript"
-              alt="Javascript"
-              srcSet=""
-              className="icon"
-            />
-          </div>
-          <div className="circle">
-            <img
-              src={react}
-              title="ReactJs"
-              alt="ReactJs"
-              srcSet=""
-              className="icon"
-            />
-          </div>
-          <div className="circle">
-            <img
-              src={tailwind}
-              title="Tailwind Css"
-              alt="Tailwind Css"
-              srcSet=""
-              className="icon"
-            />
-          </div>
-          <div className="circle">
-            <img
-              src={sass}
-              title="Sass"
-              alt="Sass"
-              srcSet=""
-              className="icon"
-            />
-          </div>
-          <div className="circle">
-            <img
-              src={express}
-              title="Express.Js"
-              alt="Express.Js"
-              srcSet=""
-              className="icon"
-            />
-          </div>
-          <div className="circle">
-            <img
-              src={node}
-              title="Node.Js"
-              alt="Node.Js"
-              srcSet=""
-              className="icon"
-            />
-          </div>
-          <div className="circle">
-            <img
-              src={java}
-              title="Java"
-              alt="Java"
-              srcSet=""
-              className="icon"
-            />
+          <div className="stacks">
+            <div className="circle">
+              <img
+                src={html}
+                title="Html5"
+                alt="Html5"
+                srcSet=""
+                className="icon"
+              />
+            </div>
+            <div className="circle">
+              <img
+                src={css}
+                title="Css3"
+                alt="Css3"
+                srcSet=""
+                className="icon"
+              />
+            </div>
+            <div className="circle">
+              <img
+                src={js}
+                title="Javascript"
+                alt="Javascript"
+                srcSet=""
+                className="icon"
+              />
+            </div>
+            <div className="circle">
+              <img
+                src={react}
+                title="ReactJs"
+                alt="ReactJs"
+                srcSet=""
+                className="icon"
+              />
+            </div>
+            <div className="circle">
+              <img
+                src={tailwind}
+                title="Tailwind Css"
+                alt="Tailwind Css"
+                srcSet=""
+                className="icon"
+              />
+            </div>
+            <div className="circle">
+              <img
+                src={sass}
+                title="Sass"
+                alt="Sass"
+                srcSet=""
+                className="icon"
+              />
+            </div>
+            <div className="circle">
+              <img
+                src={express}
+                title="Express.Js"
+                alt="Express.Js"
+                srcSet=""
+                className="icon"
+              />
+            </div>
+            <div className="circle">
+              <img
+                src={node}
+                title="Node.Js"
+                alt="Node.Js"
+                srcSet=""
+                className="icon"
+              />
+            </div>
+            <div className="circle">
+              <img
+                src={java}
+                title="Java"
+                alt="Java"
+                srcSet=""
+                className="icon"
+              />
+            </div>
           </div>
         </div>
       </div>
