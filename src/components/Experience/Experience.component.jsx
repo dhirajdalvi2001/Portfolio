@@ -7,7 +7,9 @@ function Experience() {
   return (
     <div id="experience">
       <div className="title">
-        <h2 className="heading2">Experience</h2>
+        <h2 className="heading2">
+          <span>Experience</span>
+        </h2>
       </div>
       <div className="container">
         {Data.experience.map((e) => {
