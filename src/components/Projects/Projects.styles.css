@@ -87,8 +87,7 @@
   padding: 10px;
   font-size: var(--h4);
   text-decoration: none;
-  /* color: var(--link-color); */
-  /* text-decoration: underline; */
+  color: var(--link-color);
   cursor: pointer;
 }
 #projects .link:hover {
