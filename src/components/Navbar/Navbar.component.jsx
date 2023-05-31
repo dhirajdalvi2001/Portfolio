@@ -33,7 +33,7 @@ function Navbar() {
         />
       </div>
       <div className={navTapped ? "nav-items show" : "nav-items hide"}>
-        <a href="#" className="nav-item" onClick={toggleNav}>
+        <a href="#home" className="nav-item" onClick={toggleNav}>
           Home
         </a>
         <a href="#experience" className="nav-item" onClick={toggleNav}>

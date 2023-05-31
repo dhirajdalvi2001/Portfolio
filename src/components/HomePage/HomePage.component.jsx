@@ -30,7 +30,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div id="homepage">
+    <div id="home">
       <div className="container">
         <div className="top">
           <div className="headers">

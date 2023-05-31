@@ -1,15 +1,15 @@
-#homepage {
+#home {
   display: flex;
   width: 100vw;
   height: 100vh;
 }
-#homepage .top {
+#home .top {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   height: 70vh;
 }
-#homepage .container {
+#home .container {
   margin: auto;
   width: 70vw;
   height: 80vh;
@@ -26,11 +26,11 @@
   flex-wrap: wrap;
   align-items: space-around;
 }
-#homepage .tech-stack .title {
+#home .tech-stack .title {
   display: flex;
   justify-content: flex-end;
 }
-#homepage .tech-stack .stacks {
+#home .tech-stack .stacks {
   display: flex;
   flex-wrap: wrap;
 }
@@ -108,7 +108,7 @@
   height: 55px;
 }
 @media screen and (max-width: 550px) {
-  #homepage .container {
+  #home .container {
     margin-top: 100px;
     width: 90%;
     height: fit-content;
@@ -129,7 +129,7 @@
     height: max-content;
     justify-content: center;
   }
-  #homepage .tech-stack .title {
+  #home .tech-stack .title {
     justify-content: center;
   }
   .stacks {
@@ -160,7 +160,7 @@
   }
 }
 @media screen and (min-width: 550px) and (max-width: 1000px) {
-  #homepage .container {
+  #home .container {
     margin-top: 60px;
     height: 90vh;
     flex-direction: column;
@@ -172,7 +172,7 @@
     height: max-content;
     justify-content: center;
   }
-  #homepage .tech-stack .title {
+  #home .tech-stack .title {
     justify-content: center;
   }
   .stacks {
