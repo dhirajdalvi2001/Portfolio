@@ -53,23 +53,6 @@
   width: 30px;
   height: 30px;
 }
-
-/* @keyframes show {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: 60%;
-  }
-}
-@keyframes hide {
-  0% {
-    left: 10%;
-  }
-  100% {
-    left: 100%;
-  }
-} */
 @media screen and (max-width: 550px) {
   .nav-items {
     display: none;

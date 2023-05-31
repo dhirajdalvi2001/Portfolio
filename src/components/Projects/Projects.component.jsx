@@ -1,4 +1,6 @@
 import React from "react";
+import { BsGithub } from "react-icons/bs";
+import { CiShare1 } from "react-icons/ci";
 import { Data } from "../../data/Data";
 import "./Projects.styles.css";
 
@@ -33,7 +35,10 @@ function Projects() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        GitHub Repo
+                        <div className="url-logo">
+                          <BsGithub className="logo" />
+                        </div>
+                        <span>GitHub Repo</span>
                       </a>
                       <a
                         href={e.hosted}
@@ -41,7 +46,10 @@ function Projects() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Hosted Link
+                        <div className="url-logo">
+                          <CiShare1 className="logo" />
+                        </div>
+                        <span>Hosted Link</span>
                       </a>
                     </div>
                   </div>
