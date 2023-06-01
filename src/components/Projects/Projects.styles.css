@@ -108,6 +108,12 @@
   align-items: center;
   cursor: pointer;
 }
+#projects .link span {
+  color: var(--link-color);
+}
+#projects .link span:hover {
+  color: var(--font-color);
+}
 #projects .link:hover {
   color: var(--font-color);
 }
