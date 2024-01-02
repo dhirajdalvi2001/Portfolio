@@ -55,6 +55,7 @@ const Contact = () => {
               value="name"
               formData={formData}
               setFormData={setFormData}
+              changeOnBlur
             />
             <InputField
               label="Email"
@@ -62,6 +63,7 @@ const Contact = () => {
               value="email"
               formData={formData}
               setFormData={setFormData}
+              changeOnBlur
             />
             <InputField
               label="Subject"
@@ -69,6 +71,7 @@ const Contact = () => {
               value="subject"
               formData={formData}
               setFormData={setFormData}
+              changeOnBlur
             />
             <InputField
               label="Body"
@@ -77,6 +80,7 @@ const Contact = () => {
               formData={formData}
               setFormData={setFormData}
               textarea
+              changeOnBlur
             />
             <Button value="Send" onClick={handleSubmit} />
           </form>

@@ -7,7 +7,11 @@
   cursor: pointer;
   border: 1px solid var(--header-color);
   transition: all 0.4s;
+  outline: none;
 }
 #button:hover {
+  background-color: var(--primary-color);
+}
+#button:focus {
   background-color: var(--primary-color);
 }

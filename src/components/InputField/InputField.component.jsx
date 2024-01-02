@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./InputField.styles.css";
 
 const InputField = ({
@@ -9,7 +9,17 @@ const InputField = ({
   formData,
   setFormData,
   textarea,
+  changeOnBlur = false,
 }) => {
+  const [inputVal, setInputVal] = useState("");
+  const handleChangeOnBlur = () => {
+    setFormData &&
+      setFormData((prev) => ({
+        ...prev,
+        [value]: inputVal,
+      }));
+  };
+
   return (
     <div id="input-field">
       {label && (
@@ -26,12 +36,15 @@ const InputField = ({
           value={formData[value]}
           placeholder={placeholder}
           onChange={(e) => {
-            setFormData &&
+            setInputVal(e.target.value);
+            !changeOnBlur &&
+              setFormData &&
               setFormData((prev) => ({
                 ...prev,
                 [value]: e.target.value,
               }));
           }}
+          onBlur={handleChangeOnBlur}
         />
       ) : (
         <input
@@ -41,12 +54,14 @@ const InputField = ({
           value={formData[value]}
           placeholder={placeholder}
           onChange={(e) => {
-            setFormData &&
+            setInputVal(e.target.value);
+            !changeOnBlur && setFormData &&
               setFormData((prev) => ({
                 ...prev,
                 [value]: e.target.value,
               }));
           }}
+          onBlur={handleChangeOnBlur}
         />
       )}
     </div>
