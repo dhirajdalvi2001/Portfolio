@@ -38,7 +38,9 @@ function Projects() {
                         <div className="url-logo">
                           <BsGithub className="logo" />
                         </div>
-                        <span>GitHub Repo</span>
+                        <span className="cursor-pointer bg-black">
+                          GitHub Repo
+                        </span>
                       </a>
                       <a
                         href={e.hosted}
@@ -68,6 +70,10 @@ function Projects() {
           );
         })}
       </div>
+      <p>
+        Check out more of my projects on my{" "}
+        <a href="https://github.com/dhirajdalvi2001" className="url">Github profile</a>
+      </p>
     </div>
   );
 }

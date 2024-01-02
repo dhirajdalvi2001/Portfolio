@@ -1,0 +1,13 @@
+#button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: var(--tertiary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid var(--header-color);
+  transition: all 0.4s;
+}
+#button:hover {
+  background-color: var(--primary-color);
+}

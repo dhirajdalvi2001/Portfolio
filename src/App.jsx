@@ -4,6 +4,7 @@ import Experience from "./components/Experience/Experience.component";
 import ToggleButton from "./components/ToggleButton/ToggleButton.component";
 import Navbar from "./components/Navbar/Navbar.component";
 import Projects from "./components/Projects/Projects.component";
+import Contact from "./components/Contact/Contact.component";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HomePage />
       <Experience />
       <Projects />
+      <Contact />
     </div>
   );
 }

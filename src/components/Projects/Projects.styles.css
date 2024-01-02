@@ -1,5 +1,6 @@
 #projects {
   scroll-margin-top: 60px;
+  padding-bottom: 20px;
   width: 100vw;
   min-height: 100vh;
   max-height: max-content;
@@ -94,9 +95,9 @@
   margin-right: 10px;
   width: 20px;
   height: 20px;
-}
-#projects .url-logo .logo {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #projects .link {
   margin-left: auto;
@@ -113,9 +114,11 @@
 }
 #projects .link span:hover {
   color: var(--font-color);
+  cursor: pointer;
 }
 #projects .link:hover {
   color: var(--font-color);
+  cursor: pointer;
 }
 #projects .list-item {
   margin: 10px auto;
@@ -124,6 +127,11 @@
 #projects .date {
   width: max-content;
   font-size: var(--h5);
+}
+.url {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--link-color);
 }
 @media screen and (max-width: 550px) {
   #projects .tab {
