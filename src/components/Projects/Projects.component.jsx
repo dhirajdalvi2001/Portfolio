@@ -70,7 +70,7 @@ function Projects() {
           );
         })}
       </div>
-      <p>
+      <p className="github-text">
         Check out more of my projects on my{" "}
         <a href="https://github.com/dhirajdalvi2001" className="url">Github profile</a>
       </p>

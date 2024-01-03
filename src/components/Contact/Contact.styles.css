@@ -67,6 +67,7 @@
   #contact .container {
     display: grid;
     grid-template-columns: auto;
+    font-size: 14px;
   }
   #contact .form {
     width: 80vw;
@@ -84,12 +85,12 @@
     grid-template-columns: auto;
   }
   #contact .form {
-    width: 50vw;
+    width: 70vw;
   }
   #contact .contact-headline-container {
     margin: auto;
     margin-top: 20px;
-    width: 50vw;
+    width: 70vw;
     padding: 0;
   }
 }

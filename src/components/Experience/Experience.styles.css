@@ -35,11 +35,9 @@
   display: flex;
 }
 .tab .text-part {
-  min-width: 450px;
   width: 50%;
 }
 .tab .images-part {
-  min-width: 400px;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -135,12 +133,10 @@
   }
   .tab .text-part {
     margin: auto;
-    min-width: 300px;
     width: 90%;
   }
   .tab .images-part {
     margin: auto;
-    min-width: 300px;
     width: 90%;
     height: 500px;
     display: flex;
@@ -191,12 +187,10 @@
   }
   .tab .text-part {
     margin: auto;
-    min-width: 450px;
     width: 90%;
   }
   .tab .images-part {
     margin: auto;
-    min-width: 400px;
     width: 90%;
     height: 500px;
     display: flex;

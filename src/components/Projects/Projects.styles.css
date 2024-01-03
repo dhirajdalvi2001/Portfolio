@@ -133,6 +133,9 @@
   text-decoration: none;
   color: var(--link-color);
 }
+.github-text {
+  font-size: 16px;
+}
 @media screen and (max-width: 550px) {
   #projects .tab {
     flex-direction: column;
@@ -178,6 +181,12 @@
   .SimonGame {
     width: 90%;
     height: 250px;
+  }
+  .github-text {
+    margin: auto;
+    width: 90%;
+    font-size: 12px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 550px) and (max-width: 1000px) {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./InputField.styles.css";
+import ErrorText from "../Texts/ErrorText.component";
 
 const InputField = ({
   label,
@@ -10,8 +11,12 @@ const InputField = ({
   setFormData,
   textarea,
   changeOnBlur = false,
+  errors,
+  setErrors,
+  clearInputVal,
 }) => {
   const [inputVal, setInputVal] = useState("");
+
   const handleChangeOnBlur = () => {
     setFormData &&
       setFormData((prev) => ({
@@ -19,6 +24,21 @@ const InputField = ({
         [value]: inputVal,
       }));
   };
+
+  const handleChange = (e) => {
+    setErrors((prev) => ({ ...prev, [value]: "" }));
+    setInputVal(e.target.value);
+    !changeOnBlur &&
+      setFormData &&
+      setFormData((prev) => ({
+        ...prev,
+        [value]: e.target.value,
+      }));
+  };
+
+  useEffect(() => {
+    clearInputVal && setInputVal("");
+  }, [clearInputVal]);
 
   return (
     <div id="input-field">
@@ -33,37 +53,25 @@ const InputField = ({
           rows={rows}
           name={value}
           className="textarea-field"
-          value={formData[value]}
+          value={inputVal}
           placeholder={placeholder}
-          onChange={(e) => {
-            setInputVal(e.target.value);
-            !changeOnBlur &&
-              setFormData &&
-              setFormData((prev) => ({
-                ...prev,
-                [value]: e.target.value,
-              }));
-          }}
+          onChange={(e) => handleChange(e)}
           onBlur={handleChangeOnBlur}
+          autoComplete="off"
         />
       ) : (
         <input
           type="text"
           name={value}
           className="input-field"
-          value={formData[value]}
+          value={inputVal}
           placeholder={placeholder}
-          onChange={(e) => {
-            setInputVal(e.target.value);
-            !changeOnBlur && setFormData &&
-              setFormData((prev) => ({
-                ...prev,
-                [value]: e.target.value,
-              }));
-          }}
+          onChange={(e) => handleChange(e)}
           onBlur={handleChangeOnBlur}
+          autoComplete="off"
         />
       )}
+      <ErrorText>{errors && errors[value]}</ErrorText>
     </div>
   );
 };
