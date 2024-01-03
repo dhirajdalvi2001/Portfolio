@@ -1,5 +1,6 @@
 import React from "react";
-import logo1 from "./Images/Istellar.png";
+// import logo1 from "./Images/Istellar.png";
+// import logo2 from "./Images/Istellar.png";
 import { Data } from "../../data/Data";
 import "./Experience.styles.css";
 
@@ -17,7 +18,7 @@ function Experience() {
             <div className="tab" key={e}>
               <div className="text-part">
                 <div className="logos">
-                  <img src={logo1} alt="" srcSet="" className="logo" />
+                  <img src={e?.src} alt="" srcSet="" className="logo" />
                 </div>
                 <h1 className="heading1">
                   <a href={e.link}>{e.name}</a>
@@ -33,10 +34,13 @@ function Experience() {
                   })}
                 </div>
               </div>
-              <div className="images-part">
-                <div className="website img1" />
-                <div className="website img2" />
-              </div>
+              {e?.images && (
+                <div className="images-part">
+                  {e?.images.map((image) => {
+                    return <div className={`website ${image}`} />;
+                  })}
+                </div>
+              )}
             </div>
           );
         })}

@@ -24,10 +24,13 @@
   height: max-content;
   border-radius: 12px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 .tab {
+  padding: 20px;
   margin: auto;
   width: 100%;
   max-height: max-content;
@@ -97,7 +100,18 @@
 .images-part .website:hover {
   background-position: bottom;
 }
-
+.images-part .pixelotech-cover {
+  margin-left: 10px;
+  margin-right: auto;
+  background-image: url("./Images/website3.png");
+  transition: ease-in-out 8s;
+}
+.images-part .pixelotech-about {
+  margin-left: auto;
+  margin-right: 10px;
+  background-image: url("./Images/website4.png");
+  transition: ease-in-out 8s;
+}
 .images-part .img1 {
   margin-left: 10px;
   margin-right: auto;
@@ -197,5 +211,13 @@
     flex-direction: column;
     justify-content: space-evenly;
     overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #experience .tab:hover {
+    transform: translateX(10px);
+    background-color: var(--tertiary-color);
+    border-radius: 0 50px 0 50px;
   }
 }

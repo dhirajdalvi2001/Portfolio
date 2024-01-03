@@ -1,14 +1,39 @@
+import logo1 from "../components/Experience/Images/Pixelotech.jpg";
+import logo2 from "../components/Experience/Images/Istellar.png";
+
 export const Data = {
   name: "Dhiraj Pandhari Dalvi",
   designation: "MERN Stack Developer",
   experience: [
     {
       _id: 0,
+      name: "Pixelotech",
+      designation: "Software Developer",
+      start: "22th July, 23",
+      end: "PRESENT",
+      link: "https://pixelotech.com/",
+      src: logo1,
+      description: [
+        {
+          li: "Working as a software developer at Pixelotech where I am currently working as a Frontend Developer.",
+        },
+        {
+          li: "Working on  various technologies including ReactJs, NextJs, Vite, Typescript, Tailwind css, etc.",
+        },
+        {
+          li: "Till date I've worked on various projects including CRMs, Admin-side panels, E-commerce wesites, etc.",
+        },
+      ],
+      images: ["pixelotech-cover", "pixelotech-about"],
+    },
+    {
+      _id: 1,
       name: "Istellar Labs Pvt. Ltd.",
       designation: "Software Engineer",
       start: "2nd Nov, 22",
       end: "16 Feb, 23",
       link: "https://istellarlabs.com/",
+      src: logo2,
       description: [
         {
           li: "Developed a Full Stack Single Page Application (SPA) using React and Redux architecture component method.",
@@ -26,6 +51,7 @@ export const Data = {
           li: "Finally, hosted the project codebase using GoDaddy hosting.",
         },
       ],
+      images: ["img1", "img2"],
     },
   ],
   projects: [
