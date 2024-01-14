@@ -61,7 +61,6 @@
   min-width: 300px;
   width: 16vw;
   background-color: var(--primary-color);
-  background-image: var(--profile-pic);
   background-size: cover;
   background-repeat: no-repeat;
   animation: profile 5s ease-in-out infinite;
@@ -70,7 +69,9 @@
   order: 1;
   cursor: pointer;
 }
-
+.show-profile {
+  background-image: var(--profile-pic);
+}
 @keyframes profile {
   0% {
     border-radius: 60% 30% 70% 40%/60% 30% 70% 40%;

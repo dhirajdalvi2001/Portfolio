@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ToggleButton.styles.css";
 
 function ToggleButton() {
+  const [loading, setLoading] = useState(true);
   const [isChecked, setIsChecked] = useState(true);
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("theme", "dark");
@@ -13,8 +14,16 @@ function ToggleButton() {
     e.target.checked ? setDarkMode() : setLightMode();
     isChecked ? setIsChecked(!isChecked) : setIsChecked(!isChecked);
   };
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
   return (
-    <div id="toggle-button">
+    <div
+      id="toggle-button"
+      style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+    >
       <label className="switch">
         <input
           id="toggle-switch"
