@@ -1,12 +1,21 @@
-import "./App.css";
-import HomePage from "./components/HomePage/HomePage.component";
-import Experience from "./components/Experience/Experience.component";
-import ToggleButton from "./components/ToggleButton/ToggleButton.component";
-import Navbar from "./components/Navbar/Navbar.component";
-import Projects from "./components/Projects/Projects.component";
-import Contact from "./components/Contact/Contact.component";
+import React, { lazy, Suspense } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./App.css";
+import Preloader from "./components/Preloader/Preloader.component";
+const ToggleButton = lazy(() =>
+  import("./components/ToggleButton/ToggleButton.component")
+);
+const Navbar = lazy(() => import("./components/Navbar/Navbar.component"));
+const HomePage = lazy(() => import("./components/HomePage/HomePage.component"));
+const Experience = lazy(() =>
+  import("./components/Experience/Experience.component")
+);
+const Projects = lazy(() => import("./components/Projects/Projects.component"));
+const Education = lazy(() =>
+  import("./components/Education/Education.component")
+);
+const Contact = lazy(() => import("./components/Contact/Contact.component"));
 
 function App() {
   return (
@@ -24,12 +33,15 @@ function App() {
         theme="dark"
         style={{ fontSize: "12px" }}
       />
-      <Navbar />
-      <ToggleButton />
-      <HomePage />
-      <Experience />
-      <Projects />
-      <Contact />
+      <Suspense fallback={<Preloader />}>
+        <Navbar />
+        <ToggleButton />
+        <HomePage />
+        <Experience />
+        <Projects />
+        <Education />
+        <Contact />
+      </Suspense>
     </div>
   );
 }

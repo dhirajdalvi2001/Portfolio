@@ -1,0 +1,13 @@
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #preloader .loader {
+  border-radius: 50px;
+  opacity: 0.4;
+} */

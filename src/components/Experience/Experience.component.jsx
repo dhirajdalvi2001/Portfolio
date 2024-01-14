@@ -1,6 +1,4 @@
 import React from "react";
-// import logo1 from "./Images/Istellar.png";
-// import logo2 from "./Images/Istellar.png";
 import { Data } from "../../data/Data";
 import "./Experience.styles.css";
 

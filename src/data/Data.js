@@ -1,5 +1,9 @@
 import logo1 from "../components/Experience/Images/Pixelotech.jpg";
 import logo2 from "../components/Experience/Images/Istellar.png";
+// import ljmu from "../components/Education/Images/LJMU.png"; This will be added later
+import iiitb from "../components/Education/Images/IIITB.png";
+import csmit from "../components/Education/Images/CSMIT.jpg";
+import hoc from "../components/Education/Images/HOC.png";
 
 export const Data = {
   name: "Dhiraj Pandhari Dalvi",
@@ -125,32 +129,55 @@ export const Data = {
     },
   ],
   education: [
+    // This will be added later
+    // {
+    //   _id: 0,
+    //   type: "Master of Science in Computer Science",
+    //   name: "Liverpool John Moores",
+    //   location: "Liverpool",
+    //   university: "LJMU",
+    //   year: "2024-PRESENT",
+    //   marks: "Not declared yet",
+    // },
     {
-      _id: 0,
+      _id: 1,
+      type: "Executive PG Programme (PGD)",
+      name: "International Institute of Information Technology",
+      location: "Bangalore",
+      university: "IIIT-B",
+      year: "2023-PRESENT",
+      marks: "Not declared yet",
+      src: iiitb,
+    },
+    {
+      _id: 2,
       type: "Bachelor of Engineering in Computer Engineering (B.E.)",
       name: "Chhatrapati Shivaji Maharaj Institute of Technology",
       location: "Shedung",
       university: "Mumbai University",
       year: "2019-2023",
       marks: "8.15 CGPA",
+      src: csmit,
     },
     {
-      _id: 2,
+      _id: 3,
       type: "Higher Secondary School Certificate (12th - HSC)",
       name: "HOC Jr. College",
       location: "Rasayani",
       university: "CBSE Board",
       year: "2018-2019",
       marks: "56%",
+      src: hoc,
     },
     {
-      _id: 3,
+      _id: 4,
       type: "Secondary School Certificate (10th - SSC)",
       name: "HOC School",
       location: "Rasayani",
       university: "CBSE Board",
       year: "2016-2017",
       marks: "7.6 CGPA",
+      src: hoc,
     },
   ],
   certifications: [

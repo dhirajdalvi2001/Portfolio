@@ -1,0 +1,130 @@
+#education {
+  scroll-margin-top: 60px;
+  padding-bottom: 20px;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: max-content;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#education .container {
+  margin: 40px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#education .tab {
+  padding: 20px;
+  min-width: fit-content;
+  max-height: max-content;
+  display: flex;
+  gap: 40px;
+}
+.edu-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edu-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+}
+.edu-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.edu-name {
+  font-size: 20px;
+}
+.edu-type {
+  font-size: 12px;
+  font-weight: 600;
+}
+.edu-location,
+.edu-uni {
+  color: var(--font-color);
+  font-weight: 600;
+}
+.edu-uni {
+  font-size: 14px;
+}
+.edu-year {
+  font-size: 12px;
+  font-weight: 700;
+}
+@media screen and (max-width: 550px) {
+  #education .tab {
+    padding: 20px 0 20px 20px;
+    gap: 10px;
+  }
+  .edu-info {
+    gap: 0;
+  }
+  .edu-name {
+    font-size: 14px;
+  }
+  .edu-type {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .edu-location,
+  .edu-uni {
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  .edu-uni {
+    font-size: 12px;
+  }
+  .edu-year {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .edu-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 1000px) {
+  #education .tab {
+    border-left: 3px solid var(--nav-color);
+  }
+  .edu-info {
+    gap: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #education .tab {
+    width: 40vw;
+  }
+  #education .tab:hover {
+    background-color: var(--tertiary-color);
+  }
+  .edu-left {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    border-left: 3px solid var(--nav-color);
+    flex-direction: row;
+  }
+  .edu-left:hover {
+    transform: translateX(20px);
+    border-radius: 0 12px 12px 0;
+  }
+  .edu-right {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    border-left: 0;
+    border-right: 3px solid var(--nav-color);
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  .edu-right:hover {
+    transform: translateX(-20px);
+    border-radius: 12px 0 0 12px;
+  }
+}

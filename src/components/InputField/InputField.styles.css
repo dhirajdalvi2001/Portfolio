@@ -14,6 +14,11 @@
   top: -12px;
   left: 10px;
   z-index: 10;
+}
+#input-field .tertiary {
+  background-color: var(--tertiary-color);
+}
+#input-field .secondary {
   background-color: var(--secondary-color);
 }
 #input-field .input-field {
@@ -51,7 +56,10 @@
 #input-field .textarea-field:focus {
   border: 1px solid var(--link-color);
 }
-
+#input-field .input-field:hover,
+.textarea-field:hover {
+  cursor: text;
+}
 @media screen and (max-width: 550px) {
   #input-field {
     font-size: 12px;

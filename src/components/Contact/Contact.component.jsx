@@ -97,6 +97,7 @@ const Contact = () => {
               label="Name"
               placeholder="Eg. John doe"
               value="name"
+              bg="tertiary"
               formData={formData}
               setFormData={setFormData}
               errors={errors}
@@ -108,6 +109,7 @@ const Contact = () => {
               label="Email"
               placeholder="Eg. example@emailaddress.com"
               value="email"
+              bg="tertiary"
               formData={formData}
               setFormData={setFormData}
               errors={errors}
@@ -119,6 +121,7 @@ const Contact = () => {
               label="Subject"
               placeholder="Eg. To ask if you can build a website for us"
               value="subject"
+              bg="tertiary"
               formData={formData}
               setFormData={setFormData}
               errors={errors}
@@ -130,6 +133,7 @@ const Contact = () => {
               label="Body"
               placeholder="Enter the body"
               value="body"
+              bg="tertiary"
               formData={formData}
               setFormData={setFormData}
               errors={errors}

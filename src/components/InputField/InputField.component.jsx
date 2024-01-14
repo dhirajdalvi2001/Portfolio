@@ -14,6 +14,7 @@ const InputField = ({
   errors,
   setErrors,
   clearInputVal,
+  bg = "secondary",
 }) => {
   const [inputVal, setInputVal] = useState("");
 
@@ -43,7 +44,7 @@ const InputField = ({
   return (
     <div id="input-field">
       {label && (
-        <label htmlFor="name" className="label">
+        <label htmlFor="name" className={`label ${bg}`}>
           {label}
         </label>
       )}
