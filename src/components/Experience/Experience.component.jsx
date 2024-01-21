@@ -1,6 +1,7 @@
 import React from "react";
 import { Data } from "../../data/Data";
 import "./Experience.styles.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Experience() {
   return (
@@ -16,7 +17,7 @@ function Experience() {
             <div className="tab" key={e}>
               <div className="text-part">
                 <div className="logos">
-                  <img src={e?.src} alt="" srcSet="" className="logo" />
+                  <LazyLoadImage alt={e?.name} src={e?.src} className="logo" />
                 </div>
                 <h1 className="heading1">
                   <a href={e.link}>{e.name}</a>

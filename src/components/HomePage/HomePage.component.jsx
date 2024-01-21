@@ -9,7 +9,9 @@ import sass from "./Images/sass.png";
 import express from "./Images/express.png";
 import node from "./Images/node.png";
 import java from "./Images/java.png";
+import profilePic from "./Images/ProfilePic.png";
 import "./HomePage.styles.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -57,9 +59,10 @@ function HomePage() {
             </h1>
             <div id="headline" />
           </div>
-          <div
-            className={`profile-pic ${!loading && "show-profile"}`}
-            style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+          <LazyLoadImage
+            alt={"Profile Pic"}
+            src={profilePic}
+            className="profile-pic"
           />
         </div>
         <div className="tech-stack">
@@ -69,128 +72,82 @@ function HomePage() {
           <div className="stacks">
             <div
               className="circle"
-              style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+              style={{ opacity: loading ? 0 : 1, transition: "all 0.5s" }}
             >
               {!loading && (
-                <img
-                  src={html}
-                  title="Html5"
-                  alt="Html5"
-                  srcSet=""
-                  className="icon"
-                />
+                <LazyLoadImage alt="Html5" src={html} className="icon" />
               )}
             </div>
             <div
               className="circle"
-              style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+              style={{ opacity: loading ? 0 : 1, transition: "all 0.5s" }}
             >
               {!loading && (
-                <img
-                  src={css}
-                  title="Css3"
-                  alt="Css3"
-                  srcSet=""
-                  className="icon"
-                />
+                <LazyLoadImage alt="Css3" src={css} className="icon" />
               )}
             </div>
             <div
               className="circle"
-              style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+              style={{ opacity: loading ? 0 : 1, transition: "all 0.5s" }}
             >
               {!loading && (
-                <img
-                  src={js}
-                  title="Javascript"
-                  alt="Javascript"
-                  srcSet=""
-                  className="icon"
-                />
+                <LazyLoadImage alt="Javascript" src={js} className="icon" />
               )}
             </div>
             <div
               className="circle"
-              style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+              style={{ opacity: loading ? 0 : 1, transition: "all 0.5s" }}
             >
               {!loading && (
-                <img
-                  src={react}
-                  title="ReactJs"
-                  alt="ReactJs"
-                  srcSet=""
-                  className="icon"
-                />
+                <LazyLoadImage alt="ReactJs" src={react} className="icon" />
               )}
             </div>
             <div
               className="circle"
-              style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+              style={{ opacity: loading ? 0 : 1, transition: "all 0.5s" }}
             >
               {!loading && (
-                <img
-                  src={tailwind}
-                  title="Tailwind Css"
+                <LazyLoadImage
                   alt="Tailwind Css"
-                  srcSet=""
+                  src={tailwind}
                   className="icon"
                 />
               )}
             </div>
             <div
               className="circle"
-              style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+              style={{ opacity: loading ? 0 : 1, transition: "all 0.5s" }}
             >
               {!loading && (
-                <img
-                  src={sass}
-                  title="Sass"
-                  alt="Sass"
-                  srcSet=""
-                  className="icon"
-                />
+                <LazyLoadImage alt="Sass" src={sass} className="icon" />
               )}
             </div>
             <div
               className="circle"
-              style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+              style={{ opacity: loading ? 0 : 1, transition: "all 0.5s" }}
             >
               {!loading && (
-                <img
-                  src={express}
-                  title="Express.Js"
+                <LazyLoadImage
                   alt="Express.Js"
-                  srcSet=""
+                  src={express}
                   className="icon"
                 />
               )}
             </div>
             <div
               className="circle"
-              style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+              style={{ opacity: loading ? 0 : 1, transition: "all 0.5s" }}
             >
               {!loading && (
-                <img
-                  src={node}
-                  title="Node.Js"
-                  alt="Node.Js"
-                  srcSet=""
-                  className="icon"
-                />
+                <LazyLoadImage alt="Node.Js" src={node} className="icon" />
               )}
             </div>
             <div
               className="circle"
-              style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+              style={{ opacity: loading ? 0 : 1, transition: "all 0.5s" }}
             >
               {!loading && (
-                <img
-                  src={java}
-                  title="Java"
-                  alt="Java"
-                  srcSet=""
-                  className="icon"
-                />
+                <LazyLoadImage alt="Java" src={java} className="icon" />
               )}
             </div>
           </div>

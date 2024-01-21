@@ -29,11 +29,15 @@
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  background-image: var(--toggle-bg);
   /* background-image: url("./stars.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   transition: 0.7s;
+  opacity: 0;
+}
+.slider-bg {
+  opacity: 1;
+  background-image: var(--toggle-bg);
 }
 
 .slider:before {

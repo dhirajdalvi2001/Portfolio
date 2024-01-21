@@ -69,9 +69,6 @@
   order: 1;
   cursor: pointer;
 }
-.show-profile {
-  background-image: var(--profile-pic);
-}
 @keyframes profile {
   0% {
     border-radius: 60% 30% 70% 40%/60% 30% 70% 40%;

@@ -22,7 +22,7 @@ function ToggleButton() {
   return (
     <div
       id="toggle-button"
-      style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
+      // style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s" }}
     >
       <label className="switch">
         <input
@@ -31,7 +31,7 @@ function ToggleButton() {
           onChange={toggleSwitch}
           checked={isChecked ? true : false}
         />
-        <span className="slider round"></span>
+        <span className={`slider round ${!loading && "slider-bg"}`}></span>
       </label>
     </div>
   );
